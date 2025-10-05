@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Grande Mestre</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#watch" class="button">Onde Assistir</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__container">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/images/hero_mobile.jpg">
+                <img class="hero__img" src="./src/images/hero_desktop.jpg" alt="O Grande Mestre">
+            </picture>
+            <div class="hero__content">
+                <h2 class="title">O Grande Mestre</h2>
+                <p class="text--big">
+                    Ip Man, um grande mestre da arte marcial Wing Chun, vive em Foshan, na província de Guangdong, no
+                    sul da China. Foshan é um famoso centro de aprendizagem para várias disciplinas marciais,
+                    mas Ip Man é o mais respeitado dos professores da cidade. Sua vida é complicada pela desaprovação
+                    de sua esposa, bem como a presença em Foshan de Jin Shan Zhao, um mestre do norte, que está
+                    determinado a desafiar a supremacia de Ip Man.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="films">
+        <h2 class="title--big">Filmes</h2>
+        <nav class="films__tabs">
+            <button data-tab-button="ip_man_1" class="films__tabs__button films__tabs__button--active">
+                Ip Man 1
+            </button>
+            <button data-tab-button="ip_man_2" class="films__tabs__button">
+                Ip Man 2
+            </button>
+            <button data-tab-button="ip_man_3" class="films__tabs__button">
+                Ip Man 3
+            </button>
+            <button data-tab-button="ip_man_4" class="films__tabs__button">
+                Ip Man 4
+            </button>
+        </nav>
+        <div class="films__tabs__itens">
+            <div data-tab-id="ip_man_1" class="films__tabs__item films__tabs__item--is-active">
+                <img class="films__tabs__item__img" src="./src/images/filmes/filme1.jpg" alt="Ip Man 1">
+                <div class="films__tabs__item__content">
+                    <h4 class="title">O Grande Mestre 1</h4>
+                    <p class="text--big">
+                        Ip Man (Donnie Yen) cresceu em uma China dividida pelo ódio racial, pelo radicalismo
+                        nacionalista e pela guerra. Gênio do wushu, a escola de artes marciais chinesas, ele
+                        ganha destaque após participar de diversas lutas contra mestres do wushu e lutadores
+                        de kung fu. Já estabelecido como ícone na área, ele passa a treinar jovens aprendizes,
+                        entre eles Bruce Lee.
+                    </p>
+                </div>
+            </div>
+            <div data-tab-id="ip_man_2" class="films__tabs__item">
+                <img class="films__tabs__item__img" src="./src/images/filmes/filme2.jpg" alt="Ip Man 2">
+                <div class="films__tabs__item__content">
+                    <h4 class="title">O Grande Mestre 2</h4>
+                    <p class="text--big">
+                        Neste filme inspirado em uma história real, Ip Man, um mestre em artes marciais de Wing Chun, e
+                        sua família se mudam da China para Hong Kong, onde Ip Man quer criar um escola para ensinar
+                        suas técnicas para uma nova geração. Contudo, ele encontra muita resistência por parte do
+                        mestre Hung Ga, o conhecido Hong Ahen Nan.
+                    </p>
+                </div>
+            </div>
+            <div data-tab-id="ip_man_3" class="films__tabs__item">
+                <img class="films__tabs__item__img" src="./src/images/filmes/filme3.jpg" alt="Ip Man 3">
+                <div class="films__tabs__item__content">
+                    <h4 class="title">O Grande Mestre 3</h4>
+                    <p class="text--big">
+                        Ip Man (Donnie Yen) terá uma luta explosiva com o ex-campeão mundial dos pesos pesados de boxe
+                        Mike Tyson. E a história ainda abordará parte da juventude do maior discípulo de Yip Man: Bruce
+                        Lee.
+                    </p>
+                </div>
+            </div>
+            <div data-tab-id="ip_man_4" class="films__tabs__item">
+                <img class="films__tabs__item__img" src="./src/images/filmes/filme4.jpg" alt="Ip Man 4">
+                <div class="films__tabs__item__content">
+                    <h4 class="title">O Grande Mestre 4</h4>
+                    <p class="text--big">
+                        Em O Grande Mestre 4, Ip Man tem que viajar com seu filho para São Fransisco, EUA, para achar
+                        uma nova escola para seu filho que acaba sendo expulso da escola que frequentava. Quando Ip Man
+                        tenta pedir uma carta de recomendação da Associação Benevolente Chinesa, ele acaba descobrindo
+                        que os mestres de artes marciais estão furiosos com um dos ex-alunos de Ip que agora esta
+                        ensinando as artes de Kung Fu para os estado-unidenses. Porém, se isso não bastasse, ele
+                        e seu filho ainda tem que aguentar a forte descriminação que estão enfrentando no novo país,
+                        assim como terão que lutar junto com outros imigrantes chineses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="watch" id="watch">
+        <h2 class="title--big">Onde Assistir</h2>
+        <ul class="watch__list">
+            <li class="watch__list__item">
+                <img src="./src/images/logos/prime.png" alt="Prime Video">
+                <p class="text--big">Prime Video</p>
+                <a href="https://www.primevideo.com/-/pt/detail/O-Grande-Mestre/0FUT0IGXP7W821MH0TPJOA3M12#:~:text=Prime%20Video:%20O%20Grande%20Mestre"
+                    target="_blank" class="button">
+                    Assista Agora
+                </a>
+            </li>
+            <li class="watch__list__item">
+                <img src="./src/images/logos/justwatch.png" alt="JustWatch">
+                <p class="text--big">JustWatch</p>
+                <a href="https://www.justwatch.com/br/filme/o-grande-mestre-2013" target="_blank" class="button">
+                    Assista Agora
+                </a>
+            </li>
+            <li class="watch__list__item">
+                <img src="./src/images/logos/adren_pura.png" alt="Adrenalina Pura">
+                <p class="text--big">Adrenalina Pura</p>
+                <a href="https://www.adrenalinapura.com/acao/o-grande-mestre/" target="_blank" class="button">
+                    Assista Agora
+                </a>
+            </li>
+            <li class="watch__list__item">
+                <img src="./src/images/logos/netflix.jpg" alt="Netflix">
+                <p class="text--big">Netflix</p>
+                <a href="https://www.netflix.com/title/70118799" target="_blank" class="button">
+                    Assista Agora
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Disponível nos seguintes dispositivos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./src/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./src/images/dispositivos/tv.png" alt="TV">
+                <h4 class="title--small">TV</h4>
+                <ul class="text">
+                    <li>Amazon Fire TV</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./src/images/dispositivos/videogames.png" alt="Videogames">
+                <h4 class="title--small">Videogames</h4>
+                <ul class="text">
+                    <li>PS4</li>
+                    <li>PS5</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series X</li>
+                    <li>Xbos Series S</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./src/images/dispositivos/celular.png" alt="Celular">
+                <h4 class="title--small">Celulares e tablets</h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Android</li>
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="true">
+                    Ip Man treinou Bruce Lee?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Sim, Ip Man foi o mestre e professor de artes marciais de Bruce Lee. Bruce Lee aprendeu o estilo
+                    Wing Chun com Ip Man antes de se mudar para os Estados Unidos. Ele é considerado o aluno mais
+                    famoso de Ip Man e atribuiu grande parte do seu sucesso a esse relacionamento, que é retratado
+                    em filmes e na cultura popular.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="true">
+                    Quem derrotou Ip Man?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Ip Man sofreu algumas derrotas na sua juventude, sendo a mais significativa contra Leung Bik, um
+                    mestre de kung fu que o
+                    derrotou duas vezes e depois se tornou seu mentor, instruindo-o até sua morte. Não há registro
+                    histórico de uma derrota
+                    de Ip Man na vida adulta.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="true">
+                    Qual é a história de Ip Man?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Ip Man (Yip Man) foi um mestre chinês do estilo Wing Chun de kung fu, nascido em 1893, que se tornou
+                    famoso ao ensinar a
+                    muitos alunos notórios, com Bruce Lee sendo o mais conhecido. Vindo de uma família rica em Foshan,
+                    ele treinou com
+                    mestres como Chan Wah-shun e Leung Bik. Após se mudar para Hong Kong, começou a dar aulas de kung fu
+                    para sobreviver e
+                    se tornou uma figura influente nas artes marciais, com sua vida inspirando filmes e popularizando o
+                    Wing Chun.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="true">
+                    Qual é o estilo de luta de Ip Man?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Ip Man era mestre do Wing Chun, um estilo de kung fu tradicional chinês focado em defesa pessoal,
+                    movimentos rápidos e eficientes, e uso de técnicas de bloqueio e ataque simultâneos. O Wing Chun
+                    enfatiza a economia de movimento, postura centralizada e sensibilidade ao contato, tornando-o eficaz
+                    em combates de curta distância.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="true">
+                    Vai ter O Grande Mestre 5?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Sim, foi confirmado que haverá O Grande Mestre 5 (ou Ip Man 5), com data de lançamento prevista para
+                    2025, continuando a
+                    história do mestre de Wing Chun após o que se pensava ser o fim da saga em O Grande Mestre 4. O ator
+                    Donnie Yen
+                    confirmou o projeto, que contará com a participação de outros astros como Simu Liu e Tony Jaa, e
+                    terá como foco um
+                    treino final para um jovem discípulo, numa trama que envolve a máfia de Hong Kong e ameaças
+                    internacionais.
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p class="text">2025 &copy; Patrick Oliveira - Projeto Acadêmico</p>
+        <ul class="footer__social">
+            <li>
+                <a href="https://www.linkedin.com/in/patrick-antonio-de-oliveira-a8916b286/" target="_blank">
+                    <img class="footer__social__logo" src="./src/images/icones/linkedin.png" alt="Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/PatrickAOliveira" target="_blank">
+                    <img class="footer__social__logo" src="./src/images/icones/github.png" alt="GitHub">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>

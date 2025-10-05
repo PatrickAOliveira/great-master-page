@@ -1,0 +1,123 @@
+@use "reset.scss";
+@use "var.scss";
+@use "hero.scss";
+@use "faq.scss";
+@use "films.scss";
+@use "footer.scss";
+@use "header.scss";
+@use "available-devices.scss";
+@use "watch.scss";
+@use "char.scss";
+@use "sass:color";
+
+@font-face {
+    font-family: NotoSerif;
+    src: url(../../assets/fonts/NotoSerifTC-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+body {
+    background-color: var.$corFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: var.$corTextoPrincipal;
+    font-style: normal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: var.$corTextoSecundario;
+    font-style: normal;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(11px);
+    }
+}
+
+.title--big {
+    @include title(44px);
+
+    @media (max-width: 768px) {
+        @include title(26px);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
+}
+
+.title--small {
+    @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(22px);
+    }
+}
+
+.link-text {
+    @include text(18px);
+    color: var.$corTextoSecundario;
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: var.$corFundo;
+    background-color: var.$corBotaoPrimario;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid var.$corBotaoPrimario;
+
+    &:hover {
+        background-color: color.adjust(var.$corBotaoPrimario, $lightness: 3%);
+    }
+
+    &--dark {
+        background-color: rgb(var.$corFundo, 0.8);
+        border-color: var.$corBotaoSecundaria;
+        color: var.$corBotaoSecundaria;
+
+        &:hover {
+            background-color: var.$corBotaoSecundaria;
+            color: var.$corFundo;
+        }
+    }
+}
